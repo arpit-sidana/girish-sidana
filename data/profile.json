@@ -1,0 +1,51 @@
+{
+  "name": "Girish Sidana",
+  "linkedin": "https://www.linkedin.com/in/girish-sidana-6665b75/",
+  "reviewed": "2026-10-25",
+  "bio": [
+    "My journey has taken me from engineering and technology businesses to education, mentoring, and writing. Across these chapters, I’ve been drawn to understanding people, making thoughtful decisions, and turning ideas into something useful.",
+    "I’ve led businesses, built partnerships, and worked across technology, geospatial information, and entrepreneurship. Today, as a trustee of Asha Education Trust, I contribute to practical skill education and pathways to employment for young people, with an emphasis on dignity and self-reliance.",
+    "I also help individuals make sense of personal finance. My book, Behavioural Finance for Everyday Investors, grew from a long interest in how our minds shape our financial decisions. Through my work and mentoring, I hope to pass on experience that helps others find clarity, confidence, and a path of their own."
+  ],
+  "book": {
+    "title": "Behavioural Finance for Everyday Investors",
+    "published": "September 2026",
+    "url": "https://www.amazon.in/dp/9334467614",
+    "origin_post": "https://www.linkedin.com/feed/update/urn:li:activity:7518866537819201536/"
+  },
+  "chapters": [
+    {
+      "title": "Engineering, technology, and business",
+      "text": "An engineering education led to work in design and development, technology marketing, and business leadership. At Eicher, I headed the geospatial and maps business, bringing together marketing, production, map creation, and logistics, alongside large customer relationships and strategic partnerships. I later took responsibility for new business projects and represented Eicher in industry bodies including SIAM and CII."
+    },
+    {
+      "title": "Learning through entrepreneurship",
+      "text": "At Lifestyle Cuisines, I led an effort to reimagine popular Indian foods with healthier ingredients and a baked format. We developed the brand, recipes, and product proposition, and tested the concept with consumers. The venture did not succeed commercially, but the experience deepened my understanding of product development, market validation, and the distance between an idea and a sustainable business."
+    },
+    {
+      "title": "Creating pathways through education",
+      "text": "My work in healthcare and vocational education has included Vivo Healthcare Institute in Gurugram and Lalji Mehrotra Technical Institute. As a trustee of Asha Education Trust, I now contribute to its strategic direction and growth, with a focus on industry-relevant skills, employer engagement, CSR partnerships, and career development for young people."
+    },
+    {
+      "title": "Sharing what experience teaches",
+      "text": "Alongside business and education, I have worked in personal financial planning since 2015. My focus is on making investing easier to understand, encouraging patience and discipline, and recognising the behavioural mistakes that can undermine good intentions. Writing and mentoring are ways to share those lessons beyond a single conversation."
+    }
+  ],
+  "timeline": [
+    ["2024–present", "Trustee, Asha Education Trust"],
+    ["2020–2026", "LMTI Gurugram, Sar-la Education Trust"],
+    ["2018–present", "Partner, Lifekare Technologies"],
+    ["2018–2020", "Director, Vivo Healthcare Institute, Sector 14, Gurgaon"],
+    ["2015–present", "Personal financial planning"],
+    ["2015–2016", "CEO, Lifestyle Cuisines Pvt. Ltd."],
+    ["2012–2014", "General Manager – Projects, Eicher Motors Limited"],
+    ["2005–2012", "General Manager & Head – Geospatial & Maps Business, Eicher Motors Limited"],
+    ["2004–2005", "General Manager, Adroitec Information Systems"],
+    ["1989–2005", "General Manager, Hope Technologies"],
+    ["1987–1989", "Assistant Manager, Binatone"]
+  ],
+  "education": [
+    ["2003–2004", "Indian Institute of Foreign Trade", "EMIB, International Business"],
+    ["1983–1987", "Motilal Nehru National Institute of Technology", "B.E."]
+  ]
+}
