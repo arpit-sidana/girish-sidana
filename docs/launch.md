@@ -17,7 +17,11 @@
   185.199.109.153, 185.199.110.153, and 185.199.111.153.
 - www is a DNS-only CNAME to arpit-sidana.github.io.
 - Public DNS resolves correctly and the domain serves Girish’s home page.
-  GitHub is issuing the HTTPS certificate; final HTTPS verification is pending.
+- GitHub’s TLS certificate is active; HTTPS enforcement is enabled.
+  Both https://girishsidana.com/ and the secure www redirect were verified.
+- The GitHub Pages project URL redirects to the custom domain.
+- Custom-domain metadata deployment succeeded:
+  https://github.com/arpit-sidana/girish-sidana/actions/runs/40229680248
 - Canonical URLs, Open Graph URLs, robots.txt, and sitemap.xml use the custom domain.
 
 ## Verification completed
@@ -40,7 +44,6 @@ GitHub Pages. Keep the GitHub domain verification TXT record in DNS.
 
 The included GitHub Actions workflow uses the custom domain configured in
 Pages settings. A CNAME file is neither required nor used for Actions deployments.
-The apex domain is the canonical address; GitHub redirects www to it once TLS
-is ready. Changes pushed to main automatically rebuild and deploy the site.
+The apex domain is the canonical address; GitHub redirects www to it over HTTPS. Changes pushed to main automatically rebuild and deploy the site.
 
 Reference: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
