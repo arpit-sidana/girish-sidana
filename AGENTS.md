@@ -1,6 +1,8 @@
 # Girish Sidana website
 
-Keep the source repository private. The website itself is intended for public access.
+The source repository and website are public, as requested by Arpit on
+25 October 2026 to use free GitHub Pages hosting. Never commit credentials,
+billing information, or private personal material.
 
 Preserve the shared HTML/CSS/static architecture and visual language of
 arpitsidana.com. `styles.css`, its fingerprint helper, and the local font files

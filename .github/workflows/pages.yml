@@ -1,7 +1,7 @@
 name: Deploy GitHub Pages
-# Enable Pages in repository settings after upgrading to a supporting GitHub plan.
-# Manual activation prevents failed deployments while Pages is unavailable.
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read

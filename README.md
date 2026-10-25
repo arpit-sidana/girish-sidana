@@ -1,7 +1,7 @@
 # girish-sidana
 
 Girish Sidana’s personal website: a life in business, education, mentoring,
-and writing. Private source repository owned by `arpit-sidana`.
+and writing. Public source repository owned by `arpit-sidana`.
 
 ## Structure
 
@@ -30,12 +30,9 @@ No package install or framework build is required. Only `dist/` is deployed.
 
 ## GitHub Pages
 
-On 25 October 2026, repository settings reported: “Upgrade or make this
-repository public to enable Pages.” The repository must remain private.
-After the account has a supporting plan, select **GitHub Actions** as the Pages
-source and run **Deploy GitHub Pages** from Actions. After the first successful
-deployment, add a `push` trigger for `main` in `.github/workflows/pages.yml` for
-automatic deployment on future changes.
+The repository is public at Arpit’s request so it can use free GitHub Pages.
+Select **GitHub Actions** as the Pages source. **Deploy GitHub Pages** runs on
+pushes to `main` and can also be started manually from Actions.
 
 The deployment workflow and a separate automatic validation workflow are included.
 Expected project URL once enabled: `https://arpit-sidana.github.io/girish-sidana/`.

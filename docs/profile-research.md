@@ -1,7 +1,7 @@
 # Profile research and editorial decisions
 
-Reviewed 25 October 2026 from Girish’s LinkedIn profile in Arpit’s signed-in
-browser. Public web fetching of LinkedIn failed, so the visible profile,
+Reviewed 25 October 2026 from Girish’s LinkedIn profile. Public web fetching
+of LinkedIn failed, so the visible profile,
 full Experience view, Education view, Publications, Featured item, and recent
 book announcement were read directly. No private messages or contact details
 were used.
