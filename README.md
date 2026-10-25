@@ -3,6 +3,8 @@
 Girish Sidana’s personal website: a life in business, education, mentoring,
 and writing. Public source repository owned by `arpit-sidana`.
 
+Live website: https://arpit-sidana.github.io/girish-sidana/
+
 ## Structure
 
 Plain HTML, shared CSS, local fonts, and a small feature configuration script,
@@ -35,7 +37,7 @@ Select **GitHub Actions** as the Pages source. **Deploy GitHub Pages** runs on
 pushes to `main` and can also be started manually from Actions.
 
 The deployment workflow and a separate automatic validation workflow are included.
-Expected project URL once enabled: `https://arpit-sidana.github.io/girish-sidana/`.
+Project URL: `https://arpit-sidana.github.io/girish-sidana/`.
 
 ## Domain
 

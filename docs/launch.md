@@ -5,6 +5,10 @@
 - Repository: https://github.com/arpit-sidana/girish-sidana
 - Arpit requested public source and free GitHub Pages on 25 October 2026.
   GitHub Pro is not required for this public repository.
+- Public visibility confirmed and Pages enabled using GitHub Actions.
+- Production deployed successfully:
+  https://arpit-sidana.github.io/girish-sidana/
+  Deployment run: https://github.com/arpit-sidana/girish-sidana/actions/runs/40220047224
 - Domain girishsidana.com available at Hostinger; no purchase yet. Prepared
   one-year registration: $9.99 + $0.20 ICANN fee = $10.19 before any final tax
   adjustment. Renewal displayed at $19.99/year. Free privacy included; no paid
@@ -24,7 +28,7 @@
 - Desktop, 375px mobile, and 768px tablet reviewed. The tablet shell is 720px,
   consistent with Arpit’s shared shell rule; no horizontal overflow observed.
 - Milestone disclosure opens and shows the 11 source-backed roles.
-- Domain registration and initial production deployment are tracked separately.
+- Initial production deployment succeeded. Domain registration is still pending.
 
 ## After domain registration and Pages activation
 
