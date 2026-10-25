@@ -3,7 +3,7 @@
 Girish Sidana’s personal website: a life in business, education, mentoring,
 and writing. Public source repository owned by `arpit-sidana`.
 
-Live website: https://arpit-sidana.github.io/girish-sidana/
+Live website: https://girishsidana.com/
 
 ## Structure
 
@@ -41,7 +41,8 @@ Project URL: `https://arpit-sidana.github.io/girish-sidana/`.
 
 ## Domain
 
-`girishsidana.com` was available at Hostinger on 25 October 2026 and returned
-HTTP 404 from the Verisign .com RDAP lookup. Availability is not a reservation.
-No CNAME is committed until purchase and domain ownership are verified.
-See `docs/launch.md` for DNS and launch steps.
+`girishsidana.com` was registered through Cloudflare on 25 October 2026.
+GitHub Pages is configured with this custom domain. Cloudflare DNS routes the
+apex domain and `www` to GitHub Pages; hosting remains free.
+Canonical URLs and the sitemap use the custom domain. No CNAME file is required
+for the GitHub Actions deployment. See `docs/launch.md` for DNS and launch details.

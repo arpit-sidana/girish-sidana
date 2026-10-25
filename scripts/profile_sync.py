@@ -7,6 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PROFILE = json.loads((ROOT / 'data/profile.json').read_text())
+SITE_URL = 'https://girishsidana.com'
 SECTIONS = [('work.html', 'Journey'), ('writes.html', 'Writing'),
             ('education.html', 'Education'), ('mentoring.html', 'Mentoring')]
 
@@ -27,6 +28,7 @@ def entries(items, label):
 
 
 def page(filename, title, description, body, home=False):
+    canonical = SITE_URL + ('/' if filename == 'index.html' else '/' + filename)
     nav_items = []
     for path, label in SECTIONS:
         selected = ' class="is-active" aria-current="page"' if path == filename else ''
@@ -42,6 +44,8 @@ def page(filename, title, description, body, home=False):
   <meta property="og:title" content="{escape(title, quote=True)}">
   <meta property="og:description" content="{escape(description, quote=True)}">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="{canonical}">
+  <link rel="canonical" href="{canonical}">
   <title>{escape(title)}</title>
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
   <link rel="stylesheet" href="styles.css">
@@ -108,13 +112,17 @@ def render():
       <p>That can mean talking through a business challenge, a young person’s path from training to work, or the habits behind financial decisions. The aim is to make the next step clearer and help people become more self-reliant.</p>
       <p>{link(p['linkedin'], 'Connect with me on LinkedIn ↗')}</p>
     </section>'''
-    return {
+    pages = {
         'index.html': page('index.html', 'Girish Sidana', 'Girish Sidana — business leader, author, mentor, and trustee. A journey through business, education, and financial understanding.', home, True),
         'work.html': page('work.html', 'Journey — Girish Sidana', 'Chapters from Girish Sidana’s life in technology, business leadership, entrepreneurship, and education.', journey),
         'writes.html': page('writes.html', 'Writing — Girish Sidana', 'Behavioural Finance for Everyday Investors, a book by Girish Sidana on the psychology behind financial decisions.', writing),
         'education.html': page('education.html', 'Education — Girish Sidana', 'Girish Sidana’s involvement in youth employability, vocational education, and Asha Education Trust.', education),
         'mentoring.html': page('mentoring.html', 'Mentoring — Girish Sidana', 'Girish Sidana on sharing experience, building confidence, and helping people find their own path.', mentoring, True)
     }
+    urls = [SITE_URL + ('/' if name == 'index.html' else '/' + name) for name in pages]
+    pages['sitemap.xml'] = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + '\n'.join(
+        f'  <url><loc>{url}</loc></url>' for url in urls) + '\n</urlset>\n'
+    return pages
 
 
 def main():

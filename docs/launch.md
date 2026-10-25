@@ -9,13 +9,16 @@
 - Production deployed successfully:
   https://arpit-sidana.github.io/girish-sidana/
   Deployment run: https://github.com/arpit-sidana/girish-sidana/actions/runs/40220047224
-- Domain girishsidana.com available at Hostinger; no purchase yet. Prepared
-  one-year registration: $9.99 + $0.20 ICANN fee = $10.19 before any final tax
-  adjustment. Renewal displayed at $19.99/year. Free privacy included; no paid
-  hosting, email, or Domain Shield selected.
-- Domain registration remains pending. GitHub Pages supplies the hosting;
-  Hostinger hosting, email, and Domain Shield are optional and unnecessary
-  for this deployment.
+- Domain girishsidana.com registered through Cloudflare; purchase confirmed
+  in Cloudflare’s dashboard on 25 October 2026.
+- Pages custom domain saved as girishsidana.com. Ownership verified under the
+  arpit-sidana GitHub account using its DNS TXT challenge.
+- Cloudflare DNS uses four DNS-only apex A records: 185.199.108.153,
+  185.199.109.153, 185.199.110.153, and 185.199.111.153.
+- www is a DNS-only CNAME to arpit-sidana.github.io.
+- Public DNS resolves correctly and the domain serves Girish’s home page.
+  GitHub is issuing the HTTPS certificate; final HTTPS verification is pending.
+- Canonical URLs, Open Graph URLs, robots.txt, and sitemap.xml use the custom domain.
 
 ## Verification completed
 
@@ -28,21 +31,16 @@
 - Desktop, 375px mobile, and 768px tablet reviewed. The tablet shell is 720px,
   consistent with Arpit’s shared shell rule; no horizontal overflow observed.
 - Milestone disclosure opens and shows the 11 source-backed roles.
-- Initial production deployment succeeded. Domain registration is still pending.
+- Initial production deployment succeeded.
 
-## After domain registration and Pages activation
+## Domain maintenance
 
-1. In GitHub Pages settings choose GitHub Actions and run the deployment workflow.
-2. Confirm the site loads at https://arpit-sidana.github.io/girish-sidana/.
-3. Add girishsidana.com as the Pages custom domain, and verify domain ownership
-   through GitHub’s displayed TXT record before pointing DNS at GitHub.
-4. Use the current GitHub Pages DNS values. The documented apex A records at
-   preparation time are 185.199.108.153, 185.199.109.153, 185.199.110.153,
-   and 185.199.111.153. Reverify against GitHub’s official docs before writing DNS.
-5. Point www to arpit-sidana.github.io, not a repository path.
-6. With the included Actions workflow, configure the custom domain in Pages
-   settings. A CNAME file is neither required nor used for Actions deployments.
-7. Wait for DNS validation and TLS issuance, then enable Enforce HTTPS.
-8. Add the final canonical URLs and sitemap after the working domain is confirmed.
+Manage registration and DNS in Cloudflare. Hosting and deployment remain on
+GitHub Pages. Keep the GitHub domain verification TXT record in DNS.
+
+The included GitHub Actions workflow uses the custom domain configured in
+Pages settings. A CNAME file is neither required nor used for Actions deployments.
+The apex domain is the canonical address; GitHub redirects www to it once TLS
+is ready. Changes pushed to main automatically rebuild and deploy the site.
 
 Reference: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site

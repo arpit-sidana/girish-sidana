@@ -13,7 +13,7 @@ if out.exists():
     shutil.rmtree(out)
 out.mkdir()
 for name in ['index.html', 'work.html', 'writes.html', 'education.html', 'mentoring.html',
-             'site-config.js', 'robots.txt', '.nojekyll']:
+             'site-config.js', 'robots.txt', 'sitemap.xml', '.nojekyll']:
     shutil.copy2(ROOT / name, out / name)
 for path in ROOT.glob('styles-*.css'):
     shutil.copy2(path, out / path.name)
